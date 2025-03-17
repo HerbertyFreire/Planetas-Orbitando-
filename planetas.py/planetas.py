@@ -11,16 +11,6 @@ angle_moon2 = 0
 running = False
 
 
-def draw_circle(radius, num_segments):
-    glBegin(GL_LINE_LOOP)
-    for i in range(num_segments):
-        theta = 2.0 * math.pi * i / num_segments
-        x = radius * math.cos(theta)
-        y = radius * math.sin(theta)
-        glVertex2f(x, y)
-    glEnd()
-
-
 def draw_scene():
     global angle_planet1, angle_planet2, angle_moon1, angle_moon2
 
@@ -105,3 +95,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
